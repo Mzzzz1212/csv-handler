@@ -23,7 +23,6 @@ import { useCallback, useMemo, useState } from "react";
 import { toast } from "@/hooks/use-toast";
 
 interface BookRecord {
-  id: string;
   Title: string;
   Author: string;
   Genre: string;
