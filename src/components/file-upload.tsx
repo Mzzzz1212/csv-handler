@@ -319,7 +319,7 @@ export function FileUpload({ onFileUpload }: FileUploadProps) {
         continue;
       }
 
-      const record: any = {};
+      const record = {};
       headers.forEach((header, index) => {
         const value = values[index].replace(/^"|"$/g, "");
 

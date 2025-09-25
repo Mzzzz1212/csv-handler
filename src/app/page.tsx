@@ -19,7 +19,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import Image from "next/image";
 import { useCallback, useMemo, useState } from "react";
 import { toast } from "@/hooks/use-toast";
 
@@ -358,8 +357,8 @@ export default function CSVEditor() {
                 PublishedYear, ISBN)
                 <br />
                 <span className="text-xs mt-1 block">
-                  💡 Tip: Run the "Generate Sample Book Data" script first to
-                  create a test CSV file with 12,000 records
+                  💡 Tip: Run the &quot;Generate Sample Book Data&quot; script
+                  first to create a test CSV file with 12,000 records
                 </span>
               </CardDescription>
             </CardHeader>
