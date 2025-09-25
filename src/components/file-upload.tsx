@@ -304,7 +304,6 @@ export function FileUpload({ onFileUpload }: FileUploadProps) {
         if (char === '"') {
           inQuotes = !inQuotes;
         } else if (char === "," && !inQuotes) {
-          // @ts-expect-error
           values.push(current.trim());
           current = "";
         } else {

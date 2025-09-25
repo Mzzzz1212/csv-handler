@@ -363,7 +363,6 @@ export default function CSVEditor() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              // @ts-ignore
               <FileUpload onFileUpload={handleFileUpload} />
             </CardContent>
           </Card>
