@@ -6,7 +6,6 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
 interface BookRecord {
-  id: string;
   Title: string;
   Author: string;
   Genre: string;
@@ -305,6 +304,7 @@ export function FileUpload({ onFileUpload }: FileUploadProps) {
         if (char === '"') {
           inQuotes = !inQuotes;
         } else if (char === "," && !inQuotes) {
+          // @ts-ignore
           values.push(current.trim());
           current = "";
         } else {
